@@ -2152,7 +2152,7 @@ subsetCommunication_internal <- function(net, LR, cells.level, slot.name = "net"
   net <- net[rowSums(is.na(net)) != ncol(net), , drop = FALSE]
 
   if (nrow(net) == 0) {
-    stop("No significant signaling interactions are inferred based on the input!")
+    warning("No significant signaling interactions are inferred based on the input!")
   }
 
 
